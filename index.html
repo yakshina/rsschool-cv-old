@@ -1,76 +1,101 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>CV</title>
+    <title>CV.Yakshina</title>
     <meta charset="utf-8">
     <style>
-    	body
-        {
-			margin: 0;
-			padding: 0;
-            background: #1d2c3f;
-            color: #4e5053;
-		}
+        body {
+            height: 100%;
+            padding: 0;
+            margin: 0;
+            background: #fff;
+            color: #6D6F7C;
+            font-family: Helvetica,Arial,sans-serif;
+            font-size: 15px;
+            line-height: 1.5;
+        }
+        h1,
+        .h {
+            margin: 0;
+            color: #fff;
+        }
+        h2,
+        h3 {
+            color: black;
+        }
 
-		.box {
-			box-sizing: border-box;
-			background: #fff;
-			padding: 70px 32px;
-			margin: 70px 70px;
-            box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.4);
-            border-radius: 4px;
-            background: linear-gradient(to top, #ddd, #f3f3f3);
-            font-family: 'PT Sans', sans-serif;
-			font-size: 16px;
-            margin-bottom: 5%;
-		}
-
-		.title {
-			font-family: 'Ubuntu', sans-serif;
-			font-size: 29px;
-			margin-bottom: 35px;
-            font-weight: normal;
-		}
-
-        a {
-    
-            color: #1d2c3f;
+        header {
+            padding: 5% 5% 5% 40%;
+            background: #161A27;
         }
 
         .photo {
-            width: 8em;
-            height: 8em;
-            background: url("https://scontent-arn2-1.xx.fbcdn.net/v/t1.0-9/26165589_107646616705638_2868930564794265787_n.jpg?_nc_cat=110&ccb=3&_nc_sid=09cbfe&_nc_ohc=oDV6dq9kRcMAX8mprSK&_nc_ht=scontent-arn2-1.xx&oh=05c05b9dbb08262be9dbe7b755ecd34b&oe=6062AA0E") no-repeat;
-            background-size: 15em;
-            background-position: 50% 80%;
-            border-radius: 50%;
+            width: 145px;
+            height: 145px;
             position: absolute;
-            top: 2%;
-            left: 46%
+            left: 10%;
+            top: 5%;
+            border-radius: 50%;
+            box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.5);
         }
-    </style>
-    
-  </head>
-  <body>
-      <div class = "wrapper">
-        <section class= "box">
+        main {
+            padding: 5% 10%;
+            margin: auto;
+        }
+        a {
+            color: #161A27;
+            text-decoration: none;
+        }
+        footer {
+            padding-top: 2%;
+            border-color: #161A27;
+            border-top-style: solid;
+        }
+        nav {
+            min-width: 600px;
+            margin: auto;
+            text-align: center;
+        }
+        figure {
+            display: inline;
+            margin: 1%;
+        }
+        img {
+            width: 2em;
+        }
 
-            <h1>CV</h1>
-            <div id="big" class="photo"></div>
-            <p class = "title">Kristina Yakshina</p>
+    </style>
+
+  </head>
+
+  <body>
+      <header>
+        <h1>CV. Kristina Yakshina</h1>
+        
+            <img class = "photo" alt="Photo" src="https://scontent-arn2-1.xx.fbcdn.net/v/t1.0-9/26165589_107646616705638_2868930564794265787_n.jpg?_nc_cat=110&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=toxT2xqWmu8AX8s9muO&_nc_ht=scontent-arn2-1.xx&oh=4c666078e880d9d0f3893aa53a74aed3&oe=60669E8E">
+        <section>
+        <h2 class = "h"> Contact </h2>
             
-            <h2> Contact </h2>
+        <ul>
+         <li>E-mail: st080348@student.spbu.ru</li>
+         <li>Phone: +79219395597</li>
+        </ul>
+
+      </section>
+
+      </header>
+      
+      <main>          
+      
+      <section>
+        <h2>Objective</h2> 
             
-            <ul>
-             <li>E-mail: st080348@student.spbu.ru</li>
-             <li>Phone: +79219395597</li>
-            </ul>
-            
-            <h2>Objective</h2> 
-            
-            <p>My goal is to become a front-end developer. The priority is the mathematical direction associated with the current training profile. I would like to transfer my theoretical knowledge of applied mathematics and computer science to practice. All this in order to get a promising position in a reputable organization, in order to expand your knowledge, knowledge and skills.</p>
-            
-            <h2>Technical skill set</h2> 
+        <p>My goal is to become a front-end developer. The priority is the mathematical direction associated with the current training profile. I would like to transfer my theoretical knowledge of applied mathematics and computer science to practice. All this in order to get a promising position in a reputable organization, in order to expand your knowledge, knowledge and skills.</p>
+
+      </section>
+
+      <section>
+          <h2>Technical skill set</h2> 
             
             <ul>
             <li>Java (<a href = "https://github.com/yakshina/Life">Conway's Game of Life</a>);</li>
@@ -87,8 +112,11 @@
             <li>IntelliJ IDEA;</li>
             <li>Visual Studio Code.</li>
             </ul>
-            
-            <h2>Snippet of code</h2>
+      </section>
+
+      <section>
+
+          <h2>Snippet of code</h2>
             
             <code>
             var menuElem = document.getElementById('big');<br>
@@ -98,7 +126,10 @@
                 }; <br>
             </code>
             
-            <h2>Professional experience</h2> 
+      </section>
+
+      <section>
+          <h2>Professional experience</h2> 
             
             <h3>Educational projects</h3> 
             
@@ -119,7 +150,10 @@
             </li>
             </ul>
             
-            <h2>Education, Training, and Language</h2> 
+      </section>
+
+      <section>
+          <h2>Education, Training, and Language</h2> 
             
             <h3>Education:</h3> 
             
@@ -143,10 +177,27 @@
             <li>English  - A2.</li>
             </ul> 
 
-        </section>
-        
-      </div>
+      </section>
+      </main>
 
+      <footer>
+        <nav>
+            <figure>
+                <img  alt = "GitHub" src = "https://github.githubassets.com/images/modules/site/icons/footer/github-mark.svg">
+                <a href = "https://github.com/yakshina">GitHub</a>
+            </figure>
+            <figure>
+                <img alt = "RS School" src="https://rs.school/images/rs_school_js.svg">
+                <a href = "https://rs.school/js/">RS School</a>
+            </figure>
+            <figure>
+                <img alt = "YouTube" src = "https://upload.wikimedia.org/wikipedia/commons/0/09/YouTube_full-color_icon_%282017%29.svg">
+                <a href = "">YouTube</a>
+            </figure>    
+            <p>2021</p>
+        </nav> 
+        
+      </footer>
 
   </body>
 </html>
